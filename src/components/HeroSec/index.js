@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight, AmazonLogo } from './HeroElements';
 import Video from '../../videos/HeroSectionVideo.mp4';
 import { Button } from '../Button/ButtonElement';
 
@@ -22,7 +22,7 @@ const HeroSec = () => {
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary='true'>
-                        Amazon {hover ? <ArrowForward /> : <ArrowRight />}</Button>
+                       <AmazonLogo /> Amazon {hover ? <ArrowForward /> : <ArrowRight />}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>

@@ -4,22 +4,24 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Top
 
 const InfoSection = () => {
     return (
-        <InfoContainer darkBg='true'>
+        <InfoContainer darkBg='true' id={id}>
             <InfoWrapper>
-                <InfoRow>
+                <InfoRow imgStart={imgStart}>
                     <Column1>
                     <TextWrapper>
-                        <TopLine>
-                        <Heading>
-                        <Subtitle>
+                        <TopLine>{topLine}</TopLine>
+                        <Heading lightText={lightText}>{headline}</Heading>
+                        <Subtitle darkText={darkText}>{description}</Subtitle>
                         <BtnWrap>
                             <Button to='home'></Button>
                         </BtnWrap>
-                        </Subtitle>
-                        </Heading>
-                        </TopLine>
                     </TextWrapper>
                     </Column1>
+                    <Column2>
+                        <ImgWrap>
+                            <Img src={img} />
+                        </ImgWrap>
+                    </Column2>
                 </InfoRow>
             </InfoWrapper>
         </InfoContainer>

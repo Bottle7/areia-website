@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
     color: #673ca8;
-    background: ${({darkBg}) => (darkBg ? '#78758A' : '#000')};
+    background: ${({ darkBg }) => (darkBg ? '#000' : '#372059')};
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -25,10 +25,10 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `
 
@@ -50,7 +50,7 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #0063ff;
+    color: ${({ toplineBlue }) => (toplineBlue ? '#0063ff' : '#673ca8')};
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -60,14 +60,14 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-    background: #000;
+    background: #fff;
     /* background: linear-gradient(90deg, rgba(103,60,168,1) 47.5%, rgba(0,99,255,0.65) 100%); */
-    color: ${({lightText}) => (lightText ? '#fff' : '#000')};
+    color: ${({ lightText }) => (lightText ? '#fff' : '#000')};
     font-size: 48px;
     margin-bottom: 24px;
     line-height: 1.1;
     font-weight: 600;
-    text-align: center;
+    text-align: ${({ alignLeft }) => (alignLeft ? 'start' : 'center')};
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -79,7 +79,7 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     margin-bottom: 35px;
-    color: #000;
+    color: ${({ darkText }) => (darkText ? '#000' : '#fff')};
     line-height: 24px;
     font-size: 18px;
     text-align: center;
@@ -89,4 +89,15 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+`
+
+export const ImgWrap = styled.div`
+    max-width: 555px;
+    height: 100%;
+`
+
+export const Img = styled.img`
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
 `

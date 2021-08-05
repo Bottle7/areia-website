@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSec from '../components/HeroSec';
 import InfoSection from '../components/InfoSection';
-import { infoSecOne } from '../components/InfoSection/Data';
+import { infoSecOne, infoSecTwo } from '../components/InfoSection/Data';
 
 const Home = () => {
 
@@ -19,6 +19,7 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <HeroSec />
             <InfoSection {...infoSecOne}/>
+            <InfoSection {...infoSecTwo}/>
         </>
     );
 };

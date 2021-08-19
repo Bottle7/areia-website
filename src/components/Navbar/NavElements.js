@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
+import { Link as LinkS, animateScroll as scroll } from 'react-scroll';
 
 export const Nav = styled.nav`
     background: #000;
@@ -82,13 +82,15 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
-    &:hover {
+    &.active {
+        transition: 0.3s ease-in-out;
+        border-bottom: 3px solid #0063ff;
         opacity: 100%;
-        transition: 0.2s ease-in-out;
     }
 
-    &:active {
-        border-bottom: 3px solid #673ca8;
+    &:hover {
         opacity: 100%;
+        transition: 0.25s ease-in-out;
     }
+
 `

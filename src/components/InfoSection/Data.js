@@ -9,20 +9,21 @@ export const infoSecOne = {
     lightText: true,
     lightTextDesc: true,
     secTitle: 'Discover',
-    headline: 'Explore a new galaxy where all of the sickest setups reside!',
+    headline: 'Explore a new galaxy of awesome setups!',
     description: 'Send us pics of your setups to see them featured here!',
-    buttonLabel: 'Send Pics',
+    buttonLabel: 'Send Photos',
     imgStart: true,
     img: svgOne,
     alt: 'Looking out at the stars through a window',
     dark: false,
     primary: true,
-    darkText: false
+    darkText: false,
+    hideBtn: false
 }
 export const infoSecTwo = {
-    id: 'About',
+    id: 'about',
     darkBg: false,
-    toplineBlue: true,
+    toplineBlack: true,
     alignLeft: true,
     lightText: true,
     lightTextDesc: true,
@@ -35,5 +36,6 @@ export const infoSecTwo = {
     alt: 'SVG',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    hideBtn: true
 }

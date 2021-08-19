@@ -2,16 +2,16 @@ import React from 'react';
 import { Button } from '../Button/ButtonElement';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements';
 
-const InfoSection = ({darkBg, id, toplineBlue, alignLeft, imgStart, secTitle, lightText , headline, darkText, description, buttonLabel, img, alt, primary, dark}) => {
+const InfoSection = ({darkBg, id, toplineBlack, alignLeft, imgStart, secTitle, lightText , headline, darkText, description, buttonLabel, img, alt, primary, dark, hideBtn}) => {
     return (
-        <InfoContainer darkBg={darkBg} id={id}>
+        <InfoContainer dark={dark} darkBg={darkBg} id={id}>
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrapper>
-                            <TopLine toplineBlue={toplineBlue}>{secTitle}</TopLine>
+                            <TopLine toplineBlack={toplineBlack}>{secTitle}</TopLine>
                             <Heading lightText={lightText} alignLeft={alignLeft}>{headline}</Heading>
-                            <Subtitle darkText={darkText} >{description}</Subtitle>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <Button to='home'
                                 smooth={true}
@@ -20,7 +20,8 @@ const InfoSection = ({darkBg, id, toplineBlue, alignLeft, imgStart, secTitle, li
                                 exact={true}
                                 offset={-80}
                                 primary={primary ? 1 : 0}
-                                dark={dark ? 1 : 0}>{buttonLabel}</Button>
+                                dark={dark ? 1 : 0}
+                                hideBtn={hideBtn}>{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>

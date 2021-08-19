@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Link as LinkR } from 'react-router-dom';
 
 export const InfoContainer = styled.div`
-    color: #673ca8;
-    background: ${({ darkBg }) => (darkBg ? '#000' : '#372059')};
+    color: #673CA8;
+    background: ${({ darkBg }) => (darkBg ? '#000' : '#673CA8')};
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -17,8 +18,12 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 70px 24px;
     justify-content: center;
+
+    @media screen and (max-width: 480px) {
+        padding: 35px 12px;
+    }
 `
 
 export const InfoRow = styled.div`
@@ -50,9 +55,9 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: ${({ toplineBlue }) => (toplineBlue ? '#0063ff' : '#673ca8')};
-    font-size: 16px;
-    line-height: 16px;
+    color: ${({ toplineBlack }) => (toplineBlack ? '#000' : '#673ca8')};
+    font-size: 1em;
+    line-height: 1em;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -80,15 +85,18 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     margin-bottom: 35px;
     color: ${({ darkText }) => (darkText ? '#000' : '#fff')};
-    line-height: 24px;
-    font-size: 18px;
-    text-align: center;
+    line-height: 1.6;
+    font-size: 1.12em;
     max-width: 440px;
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
 `
 
 export const ImgWrap = styled.div`
@@ -98,6 +106,4 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
 `

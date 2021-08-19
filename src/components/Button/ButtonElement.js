@@ -16,6 +16,7 @@ export const Button = styled(Link)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    visibility: ${({ hideBtn }) => (hideBtn ? 'hidden' : 'visible')};
 
     &:hover {
         transition: all 0.2s ease-in-out;

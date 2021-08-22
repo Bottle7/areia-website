@@ -1,6 +1,5 @@
-import React from 'react'
-import { animateScroll as scroll } from 'react-scroll'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements'
+import React from 'react';
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements';
 
 const Sidebar = ({ isOpen, toggle}) => {
     return (

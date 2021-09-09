@@ -53,8 +53,8 @@ export const TextWrapper = styled.div`
     padding-bottom: 60px;
 `
 
-export const TopLine = styled.p`
-    color: ${({ toplineBlack }) => (toplineBlack ? '#000' : '#673ca8')};
+export const SectionName = styled.p`
+    color: ${({ sectionNameBlack }) => (sectionNameBlack ? '#000' : '#673ca8')};
     font-size: 1em;
     line-height: 1em;
     font-weight: 700;

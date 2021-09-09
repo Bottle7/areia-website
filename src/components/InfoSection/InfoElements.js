@@ -91,7 +91,7 @@ export const Subtitle = styled.p`
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 
     @media screen and (max-width: 768px) {
         justify-content: center;

@@ -4,8 +4,8 @@ import svgTwo from '../../images/svg-2.svg';
 export const infoSecOne = {
     id: 'discover',
     darkBg: true,
-    toplineBlue: false,
-    alignLeft: false,
+    sectionNameBlack: false,
+    alignLeft: true,
     lightText: true,
     lightTextDesc: true,
     secTitle: 'Discover',
@@ -23,7 +23,7 @@ export const infoSecOne = {
 export const infoSecTwo = {
     id: 'about',
     darkBg: false,
-    toplineBlack: true,
+    sectionNameBlack: true,
     alignLeft: true,
     lightText: true,
     lightTextDesc: true,

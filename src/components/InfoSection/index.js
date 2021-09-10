@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../Button/ButtonElement';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, SectionName, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements';
 
-const InfoSection = ({darkBg, id, sectionNameBlack, alignLeft, imgStart, secTitle, lightText , headline, darkText, description, buttonLabel, img, alt, primary, dark, hideBtn}) => {
+const InfoSection = ({darkBg, id, sectionNameBlack, alignLeft, imgStart, secTitle, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, hideBtn}) => {
     return (
         <InfoContainer dark={dark} darkBg={darkBg} id={id}>
             <InfoWrapper>

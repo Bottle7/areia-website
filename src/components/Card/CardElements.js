@@ -18,9 +18,13 @@ export const CardContent = styled.div`
 `
 
 export const CardTitle = styled.h2`
-    content: "Lorem Ipsum";
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
 `
 
 export const CardBody = styled.p`
-    content: "lorem ipsum sit amet consectitor."
+    color: #FFF;
+    line-height: 1.6;
+    font-family: sans-serif;
 `

@@ -24,4 +24,8 @@ export const ProductsRow = styled.div`
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: 'card1 card2 card3';
+
+    @media screen and (min-width: 480px) {
+        grid-template-areas: 'card1' 'card2' 'card3';
+    }
 `

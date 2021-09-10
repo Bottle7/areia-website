@@ -1,12 +1,12 @@
 import React from 'react'
 import { CardContainer, CardContent, CardTitle, CardBody } from './CardElements'
 
-const Card = () => {
+const Card = (title, imgURL, body) => {
     return (
-        <CardContainer>
+        <CardContainer imgURL={imgURL}>
             <CardContent>
-                <CardTitle></CardTitle>
-                <CardBody></CardBody>
+                <CardTitle>{title}</CardTitle>
+                <CardBody>{body}</CardBody>
             </CardContent>
         </CardContainer>
     )

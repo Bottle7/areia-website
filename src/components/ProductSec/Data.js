@@ -11,5 +11,5 @@ export const cardTwo = {
 export const cardThree = {
     title: 'Black',
     imgURL: 'unsplash.it/500',
-    body: 'Stare unto the void, but know that the void stares back.'
+    body: 'Stare unto the void if you must, but know that the void stares back.'
 }

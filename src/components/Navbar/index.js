@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
                                 activeClass='active'
                                 smooth={true}
                                 spy={true}
-                                offset={-70}
+                                offset={-80}
                                 duration={500}>About</NavLinks>
                         </NavItem>
                     </NavMenu>

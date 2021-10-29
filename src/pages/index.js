@@ -21,7 +21,7 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSec />
             <InfoSection {...infoSecOne} />
-            <ProductSec {...cardOne} />
+            <ProductSec {...cardOne} {...cardTwo} {...cardThree} />
             <InfoSection {...infoSecTwo} />
         </>
     );

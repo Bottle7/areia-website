@@ -14,6 +14,7 @@ export const HeroContainer = styled.div`
 `
 
 export const HeroBg = styled.div`
+    background: linear-gradient(90deg, rgba(103,60,168,1) 47.5%, rgba(0,99,255,0.65) 100%);
     position: absolute;
     top: 0;
     right: 0;

@@ -11,7 +11,7 @@ export const ProductsWrapper = styled.div`
     height: 860px;
     width: 100%;
     padding: 70px 24px;
-    justify-content: center;
+    place-items: center;
 
     @media screen and (max-width: 480px) {
         padding: 35px 12px;
@@ -19,13 +19,12 @@ export const ProductsWrapper = styled.div`
 `
 
 export const ProductsRow = styled.div`
-    display: grid;
+    display: flex;
     width: 100%;
-    grid-auto-columns: minmax(auto, 1fr);
+    justify-content: space-evenly;
     align-items: center;
-    grid-template-areas: 'card1 card2 card3';
 
     @media screen and (min-width: 480px) {
-        grid-template-areas: 'card1' 'card2' 'card3';
+        flex-direction: column;
     }
 `

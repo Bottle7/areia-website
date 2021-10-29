@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-    background-image: 'https://picsum.photos/200';
+    background: #000;
     background-size: cover;
     padding: 10rem 0 0;
     line-height: 1.6;
-    max-width: 45ch;
+    max-width: ch;
 `
 
 export const CardContent = styled.div`

@@ -5,6 +5,7 @@ import HeroSec from '../components/HeroSec';
 import InfoSection from '../components/InfoSection';
 import { infoSecOne, infoSecTwo } from '../components/InfoSection/Data';
 import ProductSec from '../components/ProductSec';
+import { cardOne, cardTwo, cardThree } from '../components/ProductSec/Data';
 
 const Home = () => {
 
@@ -16,12 +17,12 @@ const Home = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navbar toggle={toggle} />
             <HeroSec />
-            <InfoSection {...infoSecOne}/>
-            <ProductSec />
-            <InfoSection {...infoSecTwo}/>
+            <InfoSection {...infoSecOne} />
+            <ProductSec {...cardOne} />
+            <InfoSection {...infoSecTwo} />
         </>
     );
 };

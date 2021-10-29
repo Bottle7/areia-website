@@ -1,16 +1,26 @@
 import React from 'react'
 import { ProductsContainer, ProductsWrapper, ProductsRow } from './ProductElements'
-import { cardOne, cardTwo, cardThree } from '../components/ProductSec/Data.js'
-import Card from '../Card/index'
+import { CardContainer, CardContent, CardTitle, CardBody } from './CardElements'
 
-const ProductSec = ({title, imgURL, body}) => {
+const ProductSec = (props1, props2, props3) => {
     return (
         <ProductsContainer>
             <ProductsWrapper>
                 <ProductsRow>
-                    <Card {...cardOne}/>
-                    <Card {...cardTwo}/>
-                    <Card {...cardThree}/>
+                <CardContainer>
+                    <img src={props1.imgURL} alt='' />
+                    <CardContent>
+                        <CardTitle>{props1.title}</CardTitle>
+                        <CardBody>{props1.body}</CardBody>
+                    </CardContent>
+                </CardContainer>
+                <CardContainer>
+                    <img src={props2.imgURL} alt='' />
+                    <CardContent>
+                        <CardTitle>{props2.title}</CardTitle>
+                        <CardBody>{props2.body}</CardBody>
+                    </CardContent>
+                </CardContainer>
                 </ProductsRow>
             </ProductsWrapper>
         </ProductsContainer>
